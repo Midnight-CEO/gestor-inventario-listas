@@ -38,21 +38,21 @@ Salir del programa.
 
 Funciones implementadas
 
-`mostrar_menu()`: imprime el menú.
-`buscar_indice(nombre)`: devuelve la posición de un producto en la lista, o -1 si no existe.
-`pedir_nombre()`: pide un nombre y no acepta textos vacíos.
-`pedir_cantidad()`: pide una cantidad y no acepta valores negativos.
-`registrar_producto()`: agrega un producto y su cantidad, evitando repetidos.
-`mostrar_inventario()`: recorre las listas y muestra cada producto con su cantidad.
-`buscar_producto()`: consulta un producto por nombre.
-`modificar_cantidad()`: cambia la cantidad de un producto existente.
-`eliminar_producto()`: elimina el producto de ambas listas.
-`mostrar_resumen()`: muestra la cantidad de productos diferentes.
-`mostrar_mayor_cantidad()`: muestra el producto (o productos) con más unidades.
+mostrar_menu(): imprime el menú.
+buscar_indice(nombre): devuelve la posición de un producto en la lista, o -1 si no existe.
+pedir_nombre(): pide un nombre y no acepta textos vacíos.
+pedir_cantidad(): pide una cantidad y no acepta valores negativos.
+registrar_producto(): agrega un producto y su cantidad, evitando repetidos.
+mostrar_inventario(): recorre las listas y muestra cada producto con su cantidad.
+buscar_producto(): consulta un producto por nombre.
+modificar_cantidad(): cambia la cantidad de un producto existente.
+eliminar_producto(): elimina el producto de ambas listas.
+mostrar_resumen(): muestra la cantidad de productos diferentes.
+mostrar_mayor_cantidad(): muestra el producto (o productos) con más unidades.
 
 Decisiones de diseño
 
-Las dos listas siempre se modifican juntas: el producto en `productos[i]` corresponde a la cantidad en `cantidades[i]`.
+Las dos listas siempre se modifican juntas: el producto en productos[i] corresponde a la cantidad en cantidades[i].
 No se permite registrar dos veces el mismo producto (sin importar mayúsculas o minúsculas); si ya existe, se sugiere usar la opción de modificar cantidad.
 Antes de buscar, modificar o eliminar se verifica que el producto exista.
 
